@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("WcfRestServiceOrder")]
+[assembly: AssemblyTitle("Rayda.Insurance.WcfRestServiceOrder")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Microsoft")]
-[assembly: AssemblyProduct("WcfRestServiceOrder")]
-[assembly: AssemblyCopyright("Copyright © Microsoft 2012")]
+[assembly: AssemblyCompany("Rayda")]
+[assembly: AssemblyProduct("Rayda.Insurance.WcfRestServiceOrder")]
+[assembly: AssemblyCopyright("Copyright © Rayda 2012")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

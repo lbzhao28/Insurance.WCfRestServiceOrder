@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<sqllib>
+  <SqlOrderInfo>
+    <OrderInfo>
+      <sql key="GetOrderHistInfo" dsc="查询保单信息">
+        <sql>
+          select * from con_orderhist where 1=1
+        </sql>
+      </sql>
+      <sql key="GetOrderInfo" dsc="查询保单信息">
+        <sql>
+          select * from con_orderhist where 1=1
+        </sql>
+      </sql>
+      
+      <sql key="GetOrderHistStructInfo" dsc="查询保单表结构信息">
+        <sql>
+          select * from con_orderhist where rownum = 0 
+        </sql>
+      </sql>
+      <sql key="GetNewOrderHistId" dsc="查询保单新的编号">
+        <sql>
+          select INSURANCE.SEQ_CON_ORDERHIST_ORDERID.nextval from dual
+        </sql>
+      </sql>
+    </OrderInfo>
+  </SqlOrderInfo>
+
+
+  <SqlNamesInfo>
+    <NamesInfo>
+      <sql key="GetNamesInfo" dsc="查询names 信息，根据Tid 和id 返回Dsc">
+        <sql>
+          select dsc from dic_sys_names where tid = '{0}' and id = '{1}'
+        </sql>
+      </sql>
+    </NamesInfo>
+  </SqlNamesInfo>
+
+
+  <SqlInsuranceUsrInfo>
+    <InsuranceUsrInfo>
+      <sql key="GetInsuranceUsrInfo" dsc="查询保险人信息">
+        <sql>
+          select * from INSURANCE_USR where 1=1
+        </sql>
+      </sql>
+      <sql key="GetInsuranceUsrStructInfo" dsc="查询保单人结构信息">
+        <sql>
+          select * from INSURANCE_USR where rownum=0
+        </sql>
+      </sql>
+      <sql key="GetNewInsuranceUsrId" dsc="查询保险人新的编号信息">
+        <sql>
+          select INSURANCE.SEQ_INSURANCE_USR.nextval from dual
+        </sql>
+      </sql>
+    </InsuranceUsrInfo>
+  </SqlInsuranceUsrInfo>
+
+  <SqlOrderDetInfo>
+    <OrderDetInfo>
+      <sql key="GetOrderDetInfo" dsc="查询保险详细信息">
+        <sql>
+          select * from CON_ORDERDET where 1=1
+        </sql>
+      </sql>
+      <sql key="GetOrderDetStructInfo" dsc="查询保单详细表结构信息">
+        <sql>
+          select * from CON_ORDERDET where rownum=0
+        </sql>
+      </sql>
+      <sql key="GetNewOrderDetId" dsc="查询新的保险详细编号信息">
+        <sql>
+          select INSURANCE.SEQ_CON_ORDERDET.nextval from dual 
+        </sql>
+      </sql>
+    </OrderDetInfo>
+  </SqlOrderDetInfo>
+</sqllib>
+
